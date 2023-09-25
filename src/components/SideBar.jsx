@@ -27,10 +27,10 @@ const pageLinks = [
 ]
 
 const countAmountStyle = {
-  textAlign: 'center', fontSize: '2rem', fontWeight: '100', lineHeight: '2rem', color: grey[700]
+  textAlign: 'center', fontSize: '2rem', fontWeight: '100', lineHeight: '2rem', color: 'text.main'
 }
 const countLabelStyle = {
-  textAlign: 'center', fontWeight: 'Bold', color: grey[800]
+  textAlign: 'center', fontWeight: 'Bold', color: 'text.dark'
 }
 
 function stringToColor(string) {

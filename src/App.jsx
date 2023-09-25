@@ -1,13 +1,10 @@
 import { useState } from 'react'
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@mui/material"
 import { themeMain } from './assets/themeMain'
 import { themeDark } from './assets/themeDark'
-import TopBar from "./components/TopBar"
-import SideBar from './components/SideBar';
 import Navigation from "./components/Navigation";
 import MainSection from "./components/MainSection";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from './pages/HomePage'
 import WorkOrdersPage from './pages/WorkOrdersPage'
 import ClientsJobSitesPage from './pages/ClientsJobSitesPage'
@@ -23,7 +20,7 @@ function App() {
     <>
       <ThemeProvider theme={useDarkMode ? themeDark : themeMain}>
         <BrowserRouter >
-          <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', height: '100dvh' }}>
             <Navigation useDarkMode={useDarkMode} setUseDarkMode={setUseDarkMode} />
             <MainSection>
               <Routes>

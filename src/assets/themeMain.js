@@ -41,5 +41,9 @@ export const themeMain = createTheme({
             fontWeight: 400,
             color: '#383a3d'
         },
+        body1: {
+            color: '#292b2d',
+            fontWeight: '400'
+        }
     },
 })

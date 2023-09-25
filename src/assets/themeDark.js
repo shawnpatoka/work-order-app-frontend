@@ -20,9 +20,9 @@ export const themeDark = createTheme({
             dark: '#232b33',
         },
         text: {
-            main: '#505153',
+            main: '#d7d7d7',
             light: '#9aa0a6',
-            dark: '#292b2d',
+            dark: '#f2f2f2',
         },
     },
     typography: {
@@ -41,5 +41,9 @@ export const themeDark = createTheme({
             fontWeight: 400,
             color: '#ecf0f2'
         },
+        body1: {
+            color: '#f2f2f2',
+            fontWeight: '300'
+        }
     },
 })
