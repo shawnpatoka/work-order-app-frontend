@@ -1,0 +1,22 @@
+body {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  /* min-width: 320px;
+  min-height: 100vh; */
+}
+
+
+.MuiDrawer-root .MuiButtonBase-root::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: #2d88c5;
+  transition: width 0.3s ease;
+}
+
+.MuiDrawer-root .MuiButtonBase-root:hover::before {
+  width: 6px;
+}
