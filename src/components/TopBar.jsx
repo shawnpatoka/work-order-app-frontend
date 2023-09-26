@@ -9,6 +9,7 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import Brightness6Icon from '@mui/icons-material/Brightness6';
+import WorkFlowLogo from '../assets/WorkFlowLogo';
 
 function TopBar({ isSideBarOpen, setIsSideBarOpen, useDarkMode, setUseDarkMode }) {
   const [auth, setAuth] = useState(true);
@@ -25,27 +26,28 @@ function TopBar({ isSideBarOpen, setIsSideBarOpen, useDarkMode, setUseDarkMode }
   return (
     <>
       <Box sx={{ flexGrow: 1, zIndex: '1000' }}>
-        <AppBar position="static" sx={{ bgcolor: 'primary.main' }}>
+        <AppBar position="static" sx={{ bgcolor: 'primary.white' }}>
           <Toolbar>
             <IconButton
               size="large"
               edge="start"
-              color="inherit"
+              color="primary.light"
               aria-label="menu"
               sx={{ mr: 2 }}
               onClick={() => setIsSideBarOpen(!isSideBarOpen)}
             >
               <MenuIcon />
             </IconButton>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              Work Order Application
-            </Typography>
+            <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center' }}>
+              <WorkFlowLogo useDarkMode={useDarkMode} />
+            </Box>
+
 
             <IconButton
               size="large"
               aria-label="toggle darkmode"
               onClick={() => setUseDarkMode(!useDarkMode)}
-              color="inherit"
+              color="primary.light"
             >
               <Brightness6Icon />
             </IconButton>

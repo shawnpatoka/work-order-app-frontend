@@ -1,13 +1,14 @@
 import { Container, Box } from "@mui/material"
-
+import PageTitle from "./PageTitle"
 
 function MainSection({ children }) {
   return (
-    <Box sx={{ flexGrow: 1, overflowY: 'auto', bgcolor: 'primary.light' }}>
+    <>
+      <PageTitle title="asdf" />
       <Container sx={{ mt: 2 }}>
         {children}
       </Container>
-    </Box>
+    </>
   )
 }
 

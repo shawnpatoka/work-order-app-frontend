@@ -30,7 +30,7 @@ const countAmountStyle = {
   textAlign: 'center', fontSize: '2rem', fontWeight: '100', lineHeight: '2rem', color: 'text.main'
 }
 const countLabelStyle = {
-  textAlign: 'center', fontWeight: 'Bold', color: 'text.dark'
+  textAlign: 'center', fontWeight: 'Bold', color: 'text.accent', mt: '5px'
 }
 
 function stringToColor(string) {

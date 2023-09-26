@@ -10,7 +10,7 @@ import WorkOrdersPage from './pages/WorkOrdersPage'
 import ClientsJobSitesPage from './pages/ClientsJobSitesPage'
 import PeoplePage from './pages/PeoplePage'
 import ReportsPage from './pages/ReportsPage'
-
+import { Box } from '@mui/material';
 
 function App() {
 
@@ -22,7 +22,7 @@ function App() {
         <BrowserRouter >
           <div style={{ display: 'flex', flexDirection: 'column', height: '100dvh' }}>
             <Navigation useDarkMode={useDarkMode} setUseDarkMode={setUseDarkMode} />
-            <MainSection>
+            <Box sx={{ flexGrow: 1, overflowY: 'auto', bgcolor: 'primary.light' }}>
               <Routes>
                 <Route path="/" index element={<HomePage />} />
                 <Route path="/work-orders" index element={<WorkOrdersPage />} />
@@ -30,7 +30,7 @@ function App() {
                 <Route path="/people" index element={<PeoplePage />} />
                 <Route path="/reports" index element={<ReportsPage />} />
               </Routes>
-            </MainSection>
+            </Box>
           </div>
         </BrowserRouter>
       </ThemeProvider>

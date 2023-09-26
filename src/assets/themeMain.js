@@ -7,7 +7,10 @@ export const themeMain = createTheme({
             main: '#274c77',
             light: '#edf0f3',
             dark: '#232b33',
+            medium: '#b4b4b4',
             contrastText: '#e7ecef',
+            white: '#ffffff',
+            accent: '#7d63ff'
         },
         secondary: {
             main: '#ff7700',
@@ -23,6 +26,7 @@ export const themeMain = createTheme({
             main: '#505153',
             light: '#9aa0a6',
             dark: '#292b2d',
+            accent: '#7d63ff'
         },
     },
     typography: {
