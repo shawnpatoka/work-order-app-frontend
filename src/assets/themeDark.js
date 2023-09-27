@@ -1,6 +1,8 @@
 import { createTheme } from "@mui/material"
+import baseTheme from './baseTheme'
 
 export const themeDark = createTheme({
+    ...baseTheme,
     palette: {
         mode: 'dark',
         primary: {
@@ -29,18 +31,12 @@ export const themeDark = createTheme({
     },
     typography: {
         h1: {
-            fontSize: "3rem",
-            fontWeight: 400,
             color: '#ecf0f2'
         },
         h2: {
-            fontSize: "1.75rem",
-            fontWeight: 400,
             color: '#ecf0f2'
         },
         h3: {
-            fontSize: "1.5rem",
-            fontWeight: 400,
             color: '#ecf0f2'
         },
         body1: {

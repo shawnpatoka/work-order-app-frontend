@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@mui/material"
-import { themeMain } from './assets/themeMain'
+import themeMain from './assets/themeMain'
 import { themeDark } from './assets/themeDark'
 import Navigation from "./components/Navigation";
 import MainSection from "./components/MainSection";
