@@ -1,5 +1,5 @@
-import logoLightMode from "../img/workflow_logo_color.svg";
-import logoDarkMode from "../img/workflow_logo_white.svg";
+import logoLightMode from "../img/workflow_color_darktext.svg";
+import logoDarkMode from "../img/workflow_color_lighttext.svg";
 import { Link } from "react-router-dom";
 
 
